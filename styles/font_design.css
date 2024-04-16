@@ -1,0 +1,18 @@
+main {
+    font-family: "Noto Sans KR", "맑은 고딕", sans-serif;
+}
+main .frist {}
+main .frist h1 {
+    font-family:Jua, sans-serif;
+}
+main .frist p {
+    font-family: "Nanum Pen Script", sans-serif;
+}
+main .frist p em {}
+main .second {}
+main .second h1 {
+    font-family: "Nanum Myeongjo", serif;
+}
+main .second p {
+    font-family: "Single Day", sans-serif;
+}
