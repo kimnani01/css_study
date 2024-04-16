@@ -12,7 +12,6 @@ h1 {}
 .test_box p q {}
 .test_box p code {}
 .test_box p sup {}
-.test_box p br {}
 .test_box p sub {}
 .test_box .test1 {}
 .test_box .test2 {}
@@ -20,7 +19,6 @@ h1 {}
 .test_box .test4 {}
 .test_box #warp {}
 .test_box #warp p {}
-hr {}
 header {}
 header h1 {}
 header form {}
