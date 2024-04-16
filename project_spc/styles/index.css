@@ -1,0 +1,18 @@
+main {
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
+}
+main h1 {font-size: 3.125rem; font-weight: 700; padding-bottom: 14px;}
+main > p {font-weight: 300; padding-bottom: 40px;}
+/* p 자간 공통 */
+main > p, 
+main .contents_bg > p,
+main .contents_bg .vision h2 {letter-spacing: -0.2px;}
+main .contents_bg {background-color: #F5F5F5; padding-top: 40px;}
+main .contents_bg > p {letter-spacing: -0.2px; line-height: 30px; padding-bottom: 30px;}
+main .contents_bg .vision {}
+main .contents_bg .vision h2 {
+    font-size: 1.875rem; color: #36B4E5; 
+    padding-top: 80px; padding-bottom: 30px;
+}
+main .contents_bg .vision p {font-size: 2.188rem; line-height: 45px;}
