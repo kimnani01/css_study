@@ -4,8 +4,8 @@ h1 {}
 .test_box h2 {}
 .test_box h3 {}
 .test_box h4 {}
-.test_box .title1 {}
-.test_box .title2 {}
+.test_box #title1 {}
+.test_box #title2 {}
 .test_box p {}
 .test_box blockquote {}
 .test_box p span {}
