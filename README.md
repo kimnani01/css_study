@@ -37,6 +37,7 @@
 * 절대값 : px, 상대값 : %, em, rem(권장)
 * em은 가장 가까운 부모를 기준
 * rem은 body를 기준
+## font-weight(폰트 두께)
 # 선택자 우선 순위
 * #아이디(3) > .클래스(2) > 태그(1)
 1. 다음 중 우선 순위가 가장 높고 낮은 선택자는?
@@ -58,6 +59,26 @@
 * rgba(red, green, blue, alpha) *최대색상 255
 * css에서 a(투명도)의 값은 0(0%) ~ 1(100%) 사이에 존재한다.
 ## line-heght(행간), letter-spacing(자간), word-spacing(단어 간격)
-## font-weight(폰트 두께)
 ## text-align(정렬)
 ## padding-위치(여백)
+## box css
+### display
+* `block, inline, inline-block`
+* 특정 태그가 화면에 어떻게 표시될지 지정하는 속성
+* `block` : 새로운 행, 크기, 여백 인식
+* `inline` : 내용만큼 크기인식(그 외 크기인식 불가능)
+* `inline-block` : 내용만큼 크기인식(크기 추가설정 가능), 옆으로 정렬
+### box-sizing
+* `box-sizing: border-box`
+* 요소의 너비와 높이를 계산할 때 테두리, 여백(padding)까지 포함해서 계산하는 속성
+* 속성 미적용 시 : w100+h100+padding-top20 = 100x120
+* 속성 적용 시 : w100+h100+padding-top20 = 100x100
+### width, height
+* 요소의 너비와 높이
+* 절대값px, 상대값%, 화면 상대값 vw,vh
+* 상대값 처리는 0~100% 사이 값만 사용한다.
+### border-radius(모서리 둥글게)
+* border-radius: 50%; (% 추천)
+### shadow
+* figma drop-shadow == css box-shadow
+* box-shadow: x축 y축 blur값 색상;

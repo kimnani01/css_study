@@ -4,15 +4,55 @@ main {
 }
 main h1 {font-size: 3.125rem; font-weight: 700; padding-bottom: 14px;}
 main > p {font-weight: 300; padding-bottom: 40px;}
-/* p 자간 공통 */
+/* p : 자간 공통 */
 main > p, 
 main .contents_bg > p,
-main .contents_bg .vision h2 {letter-spacing: -0.2px;}
+main .contents_bg .vision h2{letter-spacing: -0.2px;}
+/* h2 : 폰트색상, 크기, 패딩값 공통 */
+main .contents_bg .vision h2,
+main .contents_bg .goal h2 {
+    font-size: 1.875rem; color: #36B4E5;
+    padding-top: 80px; padding-bottom: 30px;
+}
+/* .contents_bg 시작 */
 main .contents_bg {background-color: #F5F5F5; padding-top: 40px;}
 main .contents_bg > p {letter-spacing: -0.2px; line-height: 30px; padding-bottom: 30px;}
 main .contents_bg .vision {}
-main .contents_bg .vision h2 {
-    font-size: 1.875rem; color: #36B4E5; 
-    padding-top: 80px; padding-bottom: 30px;
-}
+main .contents_bg .vision h2 {}
 main .contents_bg .vision p {font-size: 2.188rem; line-height: 45px;}
+/* goal */
+main .contents_bg .goal {}
+main .contents_bg .goal h2 {}
+main .contents_bg .goal .goal_contents {/* text-align: right; */}
+main .contents_bg .goal .goal_contents li {
+    display: inline-block;
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    padding-top: 67px;
+    /* figma drop-shadow == css box-shadow */
+    /* box-shadow: x축 y축 blur값 색상; */
+    box-shadow: 0px 0px 6px rgba(0,0,0,0.25);
+    /* text-align: center; */
+}
+main .contents_bg .goal .goal_contents .first {
+    background-color: #36B4E5;
+}
+main .contents_bg .goal .goal_contents .second {
+    background-color: #fff;
+}
+main .contents_bg .goal .goal_contents .last {
+    background-color: #F3C300;
+}
+main .contents_bg .goal .goal_contents li .icon {
+    padding-bottom: 20px;
+}
+main .contents_bg .goal .goal_contents li .icon img {
+    width: 60px; height: 60px;
+}
+main .contents_bg .goal .goal_contents li h3 {
+    font-size: 1.563rem; color: #fff;
+    letter-spacing: -0.2px;
+}
+main .contents_bg .goal .goal_contents .second h3 {
+    color: #000;
+}
