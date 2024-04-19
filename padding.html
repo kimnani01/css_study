@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding-0419</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        .box {
+            width: 300px; height: 200px;
+            font-size: 10rem;
+        }
+        .a {background-color: aqua;}
+        .b {
+            background-color: yellow;
+            /* margin: 10px 0 60px 20px; */
+            margin: 20px 0 30px;
+        }
+        .c {
+            background-color: lime;
+            /* margin: 0 0 10px 25px; */
+        }
+        .d {background-color: pink;}
+        .warp {
+            background-color: skyblue;
+            display: inline-block;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .warp .e {
+            background-color: lightyellow;
+        }
+        /* table */
+        .tt {
+            width: 500px; background-color: aqua;
+            margin: 30px 50px 50px 20px;
+        }
+        .tt th, .tt td {border: 1px solid red;}
+        .tt td {padding: 20px;}
+        .tt th {padding:20px 0;}
+        /* 수열 선택자 */
+        .tt thead tr th:nth-child(2) {background-color: yellow;}
+        .tt tbody tr:nth-child(1) td:nth-child(3) {
+            background-color: green;
+        }
+        .tt tbody tr td:nth-child(1) {
+            background-color: lemonchiffon;
+        }
+        .tt tbody tr:nth-child(1) {
+            border-bottom: 5px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box" class="a">a</div> -->
+    <div class="box a">a</div>
+    <div class="box b">b</div>
+    <div class="box c">c</div>
+    <div class="box d">d</div>
+    <div class="warp">
+        <div class="box e">e</div>
+    </div>
+    <hr>
+    <table class="tt">
+        <thead>
+            <tr>
+                <th>제목1</th>
+                <th>제목2</th>
+                <th>제목3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>내용1</td>
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+            <tr>
+                <td>내용1</td>
+                <td>내용2</td>
+                <td>내용3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

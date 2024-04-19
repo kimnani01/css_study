@@ -1,0 +1,70 @@
+main {
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
+    letter-spacing: -2%;
+}
+main h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 10px;
+}
+main h1 em {
+    font-weight: 700;
+    color: #f00;
+}
+main p {
+    font-weight: 500;
+    font-size: 1.125rem;
+    margin-bottom: 30px;
+}
+main .download {
+    width: 836px;
+    border-top: 2px solid #000; 
+    border-bottom: 2px solid #000;
+    display: inline-block;
+}
+main .download thead {
+    background-color: #FFFCDD;
+}
+main .download thead tr {}
+main .download thead tr th{
+    border-right: 1px solid #ddd;
+    letter-spacing: -0.2px;
+    padding: 10px 0;
+    text-align: center;
+    width: 836px;
+}
+main .download thead tr th:nth-child(4){
+    border-right: 0;
+}
+main .download tbody {}
+main .download tr {
+    border-bottom: 1px solid #ddd;
+}
+main .download tbody tr {}
+main .download tbody tr td {
+    padding: 7px 0;
+    border-right: 1px solid #ddd;
+    letter-spacing: -0.2px;
+}
+main .download tbody tr td:nth-child(4) {
+    border-right: 0;
+}
+main .download tbody tr td .download_btn {
+    border: 2px solid #f00;
+    border-radius: 30px;
+    padding: 6px 34px;
+    display: inline-block;
+}
+main .download tbody tr td .download_btn span {
+    color: #f00;
+    font-weight: 500;
+    height: 24px;
+    display: inline-block;
+}
+main .download tbody tr td .download_btn img {}
+main .page {
+    background-color: aqua;
+}
+main .page a{}
+main .page a img {}
