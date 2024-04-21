@@ -1,7 +1,7 @@
 main {
     font-family: "Noto Sans KR", sans-serif;
     text-align: center;
-    letter-spacing: -2%;
+    letter-spacing: -0.2px;
 }
 main h1 {
     font-weight: 700;
@@ -27,12 +27,15 @@ main .download thead {
     background-color: #FFFCDD;
 }
 main .download thead tr {}
-main .download thead tr th{
+main .download thead tr th {
     border-right: 1px solid #ddd;
     letter-spacing: -0.2px;
     padding: 10px 0;
     text-align: center;
     width: 836px;
+}
+main .download thead tr th:nth-child(2) {
+    padding: 0 100px;
 }
 main .download thead tr th:nth-child(4){
     border-right: 0;
@@ -59,12 +62,27 @@ main .download tbody tr td .download_btn {
 main .download tbody tr td .download_btn span {
     color: #f00;
     font-weight: 500;
-    height: 24px;
+    /* height: 24px; */
     display: inline-block;
 }
-main .download tbody tr td .download_btn img {}
+main .download tbody tr td .download_btn img {
+    width: 24px; height: 24px;
+}
 main .page {
     background-color: aqua;
+    margin-top: 30PX;
+    /* height: 24px; */
 }
-main .page a{}
+main .page .num {
+    font-size: 0.875rem;
+    font-weight: 300;
+    display: inline-block;
+    width: 24px; height: 24px;
+    padding: 2px 8px;
+    line-height: 20px;
+}
+main .page .num:nth-child(1) {
+    background-color: #f00;
+    color: #fff;
+}
 main .page a img {}
