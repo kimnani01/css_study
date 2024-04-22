@@ -1,0 +1,63 @@
+main {
+    font-family: "Noto Sans KR", sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+    width: 859px;
+    padding: 60px 56px;
+}
+main p {
+    font-size: 1.5rem;
+    line-height: 150%; /* line-height: 1.5; */
+    letter-spacing: -0.4px;
+    line-height: 150%;
+    color: #888;
+}
+main .info {
+    font-weight: 700;
+    color : #000;
+    margin: 63px 0 10px;
+}
+main .disinfection {
+    width: 100%;
+}
+main .disinfection thead {
+    background-color: #00155e;
+    color: #fff;
+}
+main .disinfection thead tr {}
+main .disinfection thead tr th {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.25rem;
+    border: 1px solid #aaa;
+    /* line-height: 57px; */ padding: 20px 0;
+}
+main .disinfection tbody {}
+main .disinfection tbody tr {}
+main .disinfection tbody tr th {
+    text-align: center;
+}
+main .disinfection tbody tr td {}
+main .disinfection tbody th,
+main .disinfection tbody td {
+    font-size: 1.25rem;
+    border: 1px solid #aaa;
+    line-height: 54px;
+}
+main .disinfection tbody tr .date {
+    width: 231px;
+    letter-spacing: 0.2px;
+}
+main .disinfection tbody tr .am_pm {
+}
+main .disinfection tbody tr .place {
+    color: #888;
+    width: 207px;
+}
+main .disinfection tbody tr .time {
+    line-height: 150%;/* line-height: 1.5; */
+}
+main .disinfection tbody tr th,
+main .disinfection tbody tr .time {
+    font-weight: 700;
+}

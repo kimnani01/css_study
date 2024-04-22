@@ -1,0 +1,67 @@
+main {
+    font-family: "Noto Sans KR", sans-serif;
+    margin: 84px 262px 0;
+    width: 510px;
+}
+main h1,
+main p {
+    letter-spacing: -0.2px;
+}
+main h1 {
+    font-weight: 900;
+    font-size: 4.375rem;
+}
+main p {
+    font-size: 1.25rem;
+    margin: 25px 0 57px;
+}
+main #login_frm {}
+main #login_frm fieldset {}
+main #login_frm fieldset .skip {}
+main #login_frm fieldset dl {}
+main #login_frm fieldset dl dt {
+    font-weight: 700;
+    font-size: 1.875rem;
+}
+main #login_frm fieldset dl dd {
+    margin: 18px 0 38px;
+}
+main #login_frm fieldset dl dd input[required] {
+    width: 500px;
+    height: 53px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    padding: 15px;
+}
+main #login_frm fieldset h2 {
+    font-weight: 700;
+    font-size: 1.875rem;
+    margin-bottom: 32px;
+}
+main #login_frm fieldset .btn {}
+main #login_frm fieldset .btn button[type=submit] {
+    font-weight: 700;
+    letter-spacing: -0.2px;
+    width: 500px;
+    height: 53px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #aaa;
+}
+main #login_frm fieldset .btn #login_btn {
+    color: #fff;
+    background-color: #222;
+}
+main #login_frm fieldset .btn #login_google_btn {
+    color: #222;
+}
+main .join_link {
+    font-size: 1rem;
+    width: 500px;
+    text-align: center;
+    color: #555;
+}
+main .join_link a {
+    font-weight: 700;
+    letter-spacing: -0.2px;
+}
