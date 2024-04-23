@@ -1,0 +1,96 @@
+main {
+    font-family: "Noto Sans KR", sans-serif;
+    width: 1024px;
+    margin: 100px auto 0;
+}
+main > * {
+    letter-spacing: -0.2px;
+    width: 760px;
+    margin-left: auto; margin-right: auto;
+}
+main h1 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    text-align: center;
+    margin-bottom: 30px;
+}
+main h1 em {}
+main p {
+    font-size: 0.875rem;
+    text-align: right;
+    margin-bottom: 10px;
+    color: #808080;
+}
+main .t1 {}
+main .t1  thead {
+    border: 1px solid #000;
+    border-left: 0; border-right: 0;
+}
+main .t1 thead tr {}
+main .t1 thead tr th {
+    line-height: 20px;
+    font-weight: 700;
+    width: 190px; height: 58px;
+}
+main .t1 thead tr th:nth-child(1) {
+    font-weight: 400;
+}
+main .t1 tbody {}
+main .t1 tbody tr {
+    border-bottom: 1px solid #DBDBDB;
+    height: 58px; 
+    font-size: 0.875rem;
+}
+main .t1 tbody tr:nth-child(5) {
+    border-bottom: 1px solid #000;
+}
+main .t1 tbody tr th {}
+main .t1 tbody tr td {}
+main .t1 tbody tr td span {
+    font-size: 0.75rem;
+    background-color: #DB0D82;
+    color: #fff;
+    border-radius: 5px;
+    padding: 1px 3px;
+    margin-right: 4px;
+    font-weight: 400;
+}
+main .t1 tbody tr td em {
+    font-weight: 900;
+    font-size: 1.125rem;
+}
+main .t1 tbody tr td del {
+    font-size: 0.875rem;
+    color: #808080;
+    line-height: 1.5;
+}
+main t1, tbody tr:nth-child(1) td {
+    font-weight: 700;
+}
+main .t1 tr th,
+main .t1 tr td {
+    text-align: center;
+}
+main .t1 tr th:nth-child(1) {
+    background-color: #F2F2F2;
+}
+main .t1 tbody tr td:nth-child(2) {
+    color: #DB0D82;
+    font-weight: 700;
+}
+main .t1 thead tr th:nth-child(2) {
+    border-top: 3px solid #DB0D82;
+}
+main .t1 tbody tr:nth-child(5) td:nth-child(2) {
+    border-bottom: 3px solid #DB0D82;
+}
+main .t1 thead tr th:nth-child(2),
+main .t1 tbody tr td:nth-child(2) {
+    border-left: 3px solid #DB0D82;
+    border-right: 3px solid #DB0D82;
+}
+main .t1 thead tr th:nth-child(3),
+main .t1 tbody tr td:nth-child(3) {
+    border-right: 1px solid #DBDBDB;
+}
