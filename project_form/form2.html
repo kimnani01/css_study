@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Spotify</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/form2.css">
+</head>
+<body>
+    <main>
+        <h1><a href="#"><img src="./images/spotify_logo.svg" alt="spotify"></a></h1>
+        <div class="sign_tab">
+            <a href="#" class="activate">SIGN IN</a>
+            <a href="#">SIGN UP</a>
+        </div>
+        <form action="#" method="post" id="sign_in_frm">
+            <fieldset class="in_group">
+                <legend class="skip">SIGN IN</legend>
+                    <div class=input>
+                        <input type="text" name=user_name placeholder="Username" required>
+                        <input type="password" name="user_pwd" placeholder="Password" required>
+                    </div>
+                    <p class="stay">
+                        <input type="checkbox" name="stay_signed_in" value="stay_signed_in" id="stay_signed_in_y">
+                        <label for="stay_signed_in_y">stay signed in</label>
+                    </p>
+                    <p class="btn">
+                        <button type="submit" id="sign_in_btn">SIGN IN</button>
+                    </p>
+                <!-- 내가 한 부분
+                    <ul>
+                        <li>
+                            <input type="text" name="user_id" placeholder="Username" required>
+                        </li>
+                        <li>
+                            <input type="password" name="password" placeholder="Password" required>
+                        </li>
+                    </ul>    
+                    <p class="stay">
+                        <input type="checkbox" name="stay_signed_in" value="stay_signed_in" id="stay_signed_in_y">
+                        <label for="stay_signed_in_y">stay_signed_in</label>
+                        </p>
+                    
+                    <p class="btn">
+                        <button type="submit" id="sign_in_btn">SIGN IN</button>
+                    </p> 
+                -->
+            </fieldset>
+        </form>
+        <a href="#" class="forgot_pw">Forget Password?</a>
+    </main>
+</body>
+</html>

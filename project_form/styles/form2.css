@@ -1,0 +1,144 @@
+body, html {background-color: #222;}
+main {
+    font-family: "NotoSansKR", sans-serif;
+    width: 1024px;
+    margin: 100px auto 0;
+    padding: 100px 0;
+    text-align: center;
+}
+main > * {
+    width: 500px;
+    margin-left: auto; margin-right: auto;
+}
+main h1 {
+    margin-bottom: 85px;
+}
+main h1 a {}
+main h1 a img {}
+main .sign_tab {
+    margin-bottom: 52px;
+}
+main .sign_tab .activate {
+    margin-right: 136px;
+    padding-bottom: 3px;
+    border-bottom: 3px solid #1ed760;
+}
+main .sign_tab a {
+    color: #fff;
+    font-size: 1.25rem;
+    letter-spacing: -0.2px;
+}
+main #sign_in_frm {}
+main #sign_in_frm .in_group {}
+main #sign_in_frm .in_group .input {}
+main #sign_in_frm .in_group .input input[name*=user] {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 36.5px;
+    line-height: 73px;
+    letter-spacing: -0.2px;
+    padding-left: 40px;
+    border: 0;
+}
+main #sign_in_frm .in_group .input input[name*=user]::placeholder {
+    color: #aaa;
+}
+main #sign_in_frm .in_group .input input[type=text] {
+    margin-bottom: 14px;
+}
+main #sign_in_frm .in_group .input input[type=password] {
+    margin-bottom: 32px;
+}
+main #sign_in_frm .in_group .stay {
+    margin-bottom: 31px;
+    text-align: left;
+}
+main #sign_in_frm .in_group .stay input[type=checkbox] {
+    display: none;
+}
+main #sign_in_frm .in_group .stay label[for=stay_signed_in_y] {
+    letter-spacing: -0.2px;
+    background-image: url(../images/uncheck_box.svg);
+    background-repeat: no-repeat;
+    padding-left: 34px;
+    color: #fff;
+}
+main #sign_in_frm .in_group .stay input[type=checkbox]:checked + label {
+    background-image: url(../images/check_box.svg);
+}
+main #sign_in_frm .in_group .btn {
+    margin-bottom: 14px;
+}
+main #sign_in_frm .in_group .btn #sign_in_btn {
+    width: 100%;
+    color: #fff;
+    background-color: #1ed760;
+    border-radius: 37px;
+    line-height: 73px;
+    font-weight: 700;
+    border: 0;
+}
+main .forgot_pw {
+    letter-spacing: -0.2px;
+    color: #fff;
+}
+/* 
+    body, html {background-color:#222;}
+main {
+    width:1024px; margin:0 auto;
+    font-family:'Noto Sans KR', sans-serif;
+}
+main h1 {text-align:center; margin:97px 0 87px;}
+main h1 a {}
+main h1 a img {}
+main .tab_title {
+    width:500px; margin:0 auto 55px;
+}
+main .tab_title a {
+    width:49%;
+    display:inline-block;
+    text-align:center;
+    color:#fff;
+}
+main .tab_title a.active span {
+    padding-bottom:5px;
+    border-bottom:3px solid #1ED760;
+}
+main #sign_in_frm {
+    width:500px; margin:0 auto;
+}
+main #sign_in_frm .in_group {}
+main #sign_in_frm .in_group .in {}
+main #sign_in_frm .in_group .in input[name^=user]:nth-child(1) {
+    margin-bottom:14px;
+}
+main #sign_in_frm .in_group .in input[name^=user] {
+    width:100%; line-height:73px;
+    border-radius:36.5px; 
+    padding-left:40px;
+    color:#aaa; letter-spacing:-0.2px;
+    border:0;
+}
+main #sign_in_frm .in_group .stay {
+    margin:31px 0 33px; color:#fff;
+}
+main #sign_in_frm .in_group .stay input[name*=sign] {display:none;}
+main #sign_in_frm .in_group .stay label[for*=sign] {
+    background-image:url(../images/un_check_box.svg);
+    background-repeat:no-repeat;
+    padding-left:34px;
+}
+main #sign_in_frm .in_group .stay input[name*=sign]:checked+label {
+    background-image:url(../images/check_box.svg)
+}
+main #sign_in_frm .in_group .btn {}
+main #sign_in_frm .in_group .btn #sign_in_btn {
+    width:100%; line-height:73px; border-radius:36.5px;
+    background-color:#1ED760; color:#fff; border:0;
+}
+main .forgot_pw {
+    color:#fff; text-align:center; padding-top:14px;
+    display:block;
+}
+
+ */

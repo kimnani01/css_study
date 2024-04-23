@@ -60,7 +60,11 @@
 * css에서 a(투명도)의 값은 0(0%) ~ 1(100%) 사이에 존재한다.
 ## line-heght(행간), letter-spacing(자간), word-spacing(단어 간격)
 ## text-align(정렬)
-## padding-위치(여백)
+## 안쪽 여백 padding, 바깥쪽 여백 margin
+* 시계방향 순서 Top → Right → Bottom → Left
+* 마진 겹치는 값 오류, 나중에 선언한 값을 0, 먼저 선언한 값에 합친 마진 값 주기
+* margin : 상하 좌우; (상=하, 좌=우)
+* margin : 상 좌우 하; (상≠하, 좌=우)
 ## box css
 ### display
 * `block, inline, inline-block`
@@ -68,6 +72,7 @@
 * `block` : 새로운 행, 크기, 여백 인식
 * `inline` : 내용만큼 크기인식(그 외 크기인식 불가능)
 * `inline-block` : 내용만큼 크기인식(크기 추가설정 가능), 옆으로 정렬
+* a태그는 inline, block 특징을 모두 가질 수 있지만 고유한 속성은 inline이기 때문에 표시속성 display명령으로 block으로 변경하지 않는 한 크기, 여백을 제대로 인식하지 못한다.
 ### box-sizing
 * `box-sizing: border-box`
 * 요소의 너비와 높이를 계산할 때 테두리, 여백(padding)까지 포함해서 계산하는 속성
@@ -82,3 +87,34 @@
 ### shadow
 * figma drop-shadow == css box-shadow
 * box-shadow: x축 y축 blur값 색상;
+## table(표)
+* 테이블 관련 태그는 모두 블록 특징을 가지고 있다.
+### tr 행, td 내용 열
+* 열(td)은 항상 행(tr) 안에 존재해야 한다.
+### thead, tbody, tfoot 행 그룹
+* 행그룹은 행(tr)의 부모로 사용
+* thead : 제목행그룹, th위주로 구성된 제목행을 묶을 때 사용
+* tbody : 내용행 그룹, td위주로 구성된 내용행(tr)을 묶을 때 사용
+* tfoot : 결과행그룹, th&td들로 구성된 결과값을 가지는 결과행(tr)을 묶을 때 사용
+* tfoot을 쓸 경우 tbody보다 올려 쓴다. (스크린리더)
+## form 요소와 속성
+### `<form action="#" method=""></form>`
+* action : 폼 데이터를 제출할 서버 스크립트 지정
+* method : 폼 데이터를 제출하는 방법 (post:보안높음 / get:보안낮음)
+### `<input type="" name="">`
+* type : input 요소가 나타낼 입력 필드의 종류를 정한다.
+* name : input 요소의 이름을 지정한다. (데이터 구분)
+* readonly : 읽기전용
+* autofocus, autocomplete : 커서 활성화, 자동완성
+* value : 미리 제시된 텍스트
+* placeholder : 미리 제시된 텍스트
+* value와 palceholder의 차이점 : value는 활성화 시 제거가 안되고, placeholder는 활성화 시 제거된다.
+* maxlength
+### `<textarea></textarea>`
+* rows, cols : 행, 열 글자 수를 정한다.
+* 사용용도 및 주의 사항 : 폰트에 따라 영역크기가 달라질 수 있기 때문에 width, height를 사용하여 값을 정하는 것이 좋다.
+### input의 입력양식과 선택양식
+* text, url 등의 사용자가 직접 입력 가능한 입력양식
+* radio 등의 사용자의 입력이 아닌 선택으로 들어가는 선택양식
+* `name` : 입력양식(데이터구분용), 선택양식(데이터구분(개별데이터x, 그룹데이터 구분용))
+* `value` : 입력양식(초기값), 선택양식(개별데이터 구분용)
