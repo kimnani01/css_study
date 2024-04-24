@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0424</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <style>
+        #testfrm .select dl dd select[name=month] + span {}
+        #testfrm .select dl dd select[name=day] + span {}
+    </style>
+</head>
+<body>
+    <h1>form</h1>
+    <form action="#" method="post" id="testfrm">
+        <fieldset class="select">
+            <legend class="skip">선택양식</legend>
+            <dl>
+                <dt>성별</dt>
+                <dd>선택양식 중 하나만 선택 가능, 무조건 최소 1개가 선택되어야 하는 경우</dd>
+                <dd>
+                    <label>
+                        <input type="radio" name="gender" value="male">
+                        <span>남자</span>
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female" checked="checked">
+                        <span>여자</span>
+                    </label>
+                    <!-- input과 label이 형제인 경우 -->
+                    <!-- input:checked+label => background-image -->
+                    <!-- input과 label이 부모-자식인 경우 -->
+                    <!-- label은 부모이기 때문에 대상으로 불가능함. -->
+                    <!-- 태그 추가 생서으로 구성 -->
+                    <!-- input:checked+span => backgroud-image -->
+                </dd>
+                <dt>관심사(2개 이상 선택)</dt>
+                <dd>
+                    <input type="checkbox" name="job" value="web_planner" id="web_planner" checked="checked">
+                    <label for="web planner">웹기획자</label>
+                    <input type="checkbox" name="job" value="web_designer" id="web_designer">
+                    <label for="web_designer">웹디자이너</label>
+                    <input type="checkbox" name="job" value="web_publisher" id="web_publisher">
+                    <label for="web_publisher">웹퍼블리셔</label>
+                    <input type="checkbox" name="job" value="front_end_developer" id="front_end_developer">
+                    <label for="front_end_developer">프론트앤드개발자</label>
+                    <input type="checkbox" name="job" value="backend_developer" id="backend_developer">
+                    <label for="backend_developer">백앤드개발자</label>
+                </dd>
+                <dt>생일</dt>
+                <dd>
+                    <select name="month">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select><span>월</span>
+                    <select name="day">
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                    </select><span>일</span>
+                </dd>
+            </dl>
+        </fieldset>
+        <fieldset class="btn">
+            <legend class="skip">버튼</legend>
+            <!-- <input type="submit" value="전송, 확인"> -->
+            <button type="submit" id="login_btn">전송, 확인</button>
+            <button type="reset" id="login_reset_btn">취소, 삭제</button>
+            <button type="button" id="all_around_btn">범용특징버튼</button><!-- 사용자의 상황에 따라 활성화, 페이지 이동, submit, reset을 쓰기 어려울 때 -->
+            <hr>
+            <input type="file">
+        </fieldset>
+    </form>
+</body>
+</html>
