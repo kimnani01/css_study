@@ -118,7 +118,29 @@
 * radio 등의 사용자의 입력이 아닌 선택으로 들어가는 선택양식
 * `name` : 입력양식(데이터구분용), 선택양식(데이터구분(개별데이터x, 그룹데이터 구분용))
 * `value` : 입력양식(초기값), 선택양식(개별데이터 구분용)
-## 자식에 float 적용함으로써 생기는 부모인식 오류 해결
+## CSS Layout
+### float, flex
+* `float` : 형제 관계에 해당하는 block or inline tag 왼쪽, 오른쪽 정렬할 때 사용
+* 예 : ul-li*3개 정렬 `ul li {float:left;}`
+* `flex` : 정렬하고자 하는 아이템의 부모한테 flex를 먼저 설정한다.
+* 예 : ul-li*3개 정렬 `ul {display:flex;}`
+* flex 설정 시 **기본값** : 메인축(수평) 교차축(수직)
+`display:flex` : 정렬대상의 부모 설정 속성값, 설정 시 해당 부모 기준 자식까지(자손x) flexible box layout으로 처리하겠다!
+### 자식에 float 적용함으로써 생기는 부모인식 오류 해결
 * 해결법 1. 크기를 직접 적용한다. (height: 100px;)
 * 해결법 2. 자식 포함 크기재인식 속성 (overflow: hidden;)
 * 해결법 3. 가상요소생성 (::after {clear:both;`float를 제거` content:'';`빈 문자열` display: block;`가상요소의 표현속성`})
+### flex : container(부모)에 적용하는 속성
+* flex-directon : container 안의 item의 메인축 방향 설정
+* flex-warp : container 내부 items 줄바꿈 처리 설정
+* flex-flow :  flex-direction과 flex-wrap을 묶음으로 처리
+- `flex-flow: 메인축방향 줄바꿈 속성;`
+- flex를 쓸 때는 자식에 height와 line-height를 같이 쓰는 경우가 많다
+* justify-content : 메인축의 **정렬방법**을 설정
+* align-content : 교차축의 아이템이 **2줄 이상**일 경우 정렬방법 (flex-warp:warp 적용한 상태)
+- **flex-warp:wrap** 적용한 상태에서 해야한다
+* align-items : 교차축의 아이템이 **1줄**일 경우 정렬방법
+### flex : item(자식)에 적용하는 속성
+* align-self : container(부모)에 적용하는 align-items보다 우선순위가 높다
+* order : 아이템의 정렬 순서 설정. 태그순서와 상관없이 order로 정렬순서를 변경가능
+* flex : 증가/감소/기본의 묶음속성

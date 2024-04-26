@@ -1,0 +1,161 @@
+main {}
+/* 배경 공통&개별값 */
+main .bg {
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .bg1 {
+    background-image: url(../images/bg.jpg);
+    height: 1000px;
+}
+/* ---------------------------------1. 표지 */
+main .bg1 section {
+    width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+main .bg1 section h1 {}
+main .bg1 section h1 a {}
+main .bg1 section h1 a img {}
+main .bg1 section h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 4.375rem;
+    letter-spacing: -0.2px;
+    line-height: 1.2;
+    margin: 165px 0 30px; 
+}
+main .bg1 section h2 em {
+    font-weight: 700;
+}
+main .bg1 section .support_link::after {
+    content: '';
+    background-image: url(../images/btn_right_arrow.svg);
+    background-repeat: no-repeat;
+    width: 32px; height: 32px;
+    display: inline-block;
+    margin-left: 10px;
+}
+main .bg1 section .support_link {
+    /* 0% #fe9300, 100% #ff7300 */
+    /* CSS 회전각도단위 deg */
+    background: linear-gradient(90deg,#fe9300, #ff7300);
+    /* gradient적용을 위해 background통합속성을 사용했을 때 해당 요소 추가 배경이미지 꾸미기를 원한다면 가상선택자(before, after)를 활용하는 것을 권장한다. */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 100px;
+    width: 409px; height: 71px;
+    /* text-align: center; line-height: 71px; */
+    border-radius: 50px;
+    font-size: 2.125rem;
+    font-weight: 700;
+}
+main .bg1 section .support_question {
+    background-color: #050505;
+    color: #fff;
+    float: right;
+    width: 347px; height: 54px;
+    border-radius: 30px;
+    /* text-align: center; line-height: 64px; */
+    font-size: 1.250rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .bg1 section .support_question::before,
+main .bg1 section .support_question::after {
+    content: '';
+    background-repeat: no-repeat;
+    background-size: 24px 24px;
+    display: inline-block;
+    width: 24px; height: 24px;
+}
+main .bg1 section .support_question::before {
+    background-image: url(../images/icon_sms.svg);
+    margin-right: 10px;
+}
+main .bg1 section .support_question::after {
+    background-image: url(../images/btn_right_arrow.svg);
+    margin-left: 10px;
+}
+/* ---------------------------------2. 퀴즈 */
+main .bg2 {
+    background-image: url(../images/bg_2.jpg);
+    height: 619px;
+}
+main .bg2 section {
+    background-color: tomato;
+    width: 1250px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/* 퀴즈 왼쪽 */
+main .bg2 section #quiz_frm {
+    background-color: pink;
+    float: left;
+    width: 450px;
+    margin: 80px 0;
+}
+main .bg2 section #quiz_frm .quiz_contents {
+    color: #fff;
+}
+main .bg2 section #quiz_frm .quiz_contents h2 {
+    font-size: 3.438rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+}
+main .bg2 section #quiz_frm .quiz_contents p,
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li{
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+main .bg2 section #quiz_frm .quiz_contents p {}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list {}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li {
+    margin-top: 30px;
+}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li input[name=percent] {
+    display: none;
+}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li label {
+    background-image: url(../images/quiz_unchecked.svg);
+    background-repeat: no-repeat;
+    padding-left: 48px;
+}
+main .bg2 section #quiz_frm .quiz_contents .quiz_list li input[name=percent]:checked + label {
+    background-image: url(../images/quiz_checked.svg);
+}
+main .bg2 section #quiz_frm .quiz_contents p:last-child {
+    text-align: center;
+    margin: 40px 0 0;
+}
+main .bg2 section #quiz_frm .quiz_contents p #answer_btn {
+    background-color: #050505;
+    color: #fff;
+    width: 450px; line-height: 47px;
+    border: 0;
+    border-radius: 50px;
+    font-size: 1rem;
+}
+/* 퀴즈 오른쪽 */
+main .bg2 section .quiz_participation {
+    background-color: greenyellow;
+    float: right;
+    margin-top: 170px;
+}
+main .bg2 section .quiz_participation h2 {
+    background-color: #fe9300;
+    color:#fff;
+    border-radius: 10px 10px 0 0;
+    font-size: ;
+    font-weight: 500;
+    
+}
+main .bg2 section .quiz_participation .status {}
+main .bg2 section .quiz_participation .status em {}
+main .bg2 section .quiz_participation .status span {}
+main .bg2 section .quiz_participation .status strong {}

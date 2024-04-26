@@ -1,0 +1,29 @@
+main {}
+main #logo {}
+main #logo a {}
+main #logo a img {}
+main h1 {}
+main p {}
+main .sns {}
+main .sns a {}
+main #join_frm {}
+main #join_frm .user_info {}
+main #join_frm .user_info dl {}
+main #join_frm .user_info dl dt {}
+main #join_frm .user_info dl dt dd {}
+main #join_frm .user_info dl dt dd input[name^=user] {}
+main #join_frm .user_info dl dt dd input[name=user_mail] {}
+main #join_frm .user_info dl dt dd span {}
+main #join_frm .user_info dl dt dd select[name=web] {}
+main #join_frm .user_info dl dt dd select[name=web] option {}
+main #join_frm .user_info dl dt dd #mail_check_btn {}
+main #join_frm .law_agree {}
+main #join_frm .law_agree h2 {}
+main #join_frm .law_agree ul {}
+main #join_frm .law_agree ul li {}
+/* 약관동의 공통 : 체크박스, em */
+main #join_frm .law_agree ul li input[name=law] {}
+main #join_frm .law_agree ul li label {}
+main #join_frm .law_agree ul li label em {}
+main #join_frm .law_agree ul li label:nth-of-type(2-4) {}
+main #join_frm .law_agree ul li #all_agree {}
