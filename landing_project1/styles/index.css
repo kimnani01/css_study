@@ -1,4 +1,6 @@
-main {}
+main {
+    color: #050505;
+}
 /* 배경 공통&개별값 */
 main .bg {
     background-position: center;
@@ -87,14 +89,12 @@ main .bg2 {
     height: 619px;
 }
 main .bg2 section {
-    background-color: tomato;
     width: 1250px;
     margin: 0 auto;
     overflow: hidden;
 }
 /* 퀴즈 왼쪽 */
 main .bg2 section #quiz_frm {
-    background-color: pink;
     float: left;
     width: 450px;
     margin: 80px 0;
@@ -143,19 +143,48 @@ main .bg2 section #quiz_frm .quiz_contents p #answer_btn {
 }
 /* 퀴즈 오른쪽 */
 main .bg2 section .quiz_participation {
-    background-color: greenyellow;
     float: right;
     margin-top: 170px;
+    text-align: center;
 }
-main .bg2 section .quiz_participation h2 {
+main .bg2 section .quiz_participation .status {
+    width: 510px;
+}
+main .bg2 section .quiz_participation .status h2 {
     background-color: #fe9300;
+    background-image: url(../images/icon_person.svg);
+    background-repeat: no-repeat;
+    background-position: 151px 20px;
+    padding-left: 52px;
+    line-height: 82px;
     color:#fff;
     border-radius: 10px 10px 0 0;
-    font-size: ;
+    font-size: 1.625rem;
     font-weight: 500;
-    
 }
-main .bg2 section .quiz_participation .status {}
-main .bg2 section .quiz_participation .status em {}
-main .bg2 section .quiz_participation .status span {}
-main .bg2 section .quiz_participation .status strong {}
+main .bg2 section .quiz_participation .status .contents {
+    color: #ff7300;
+    background-color: #fff;
+    border-radius: 0 0 10px 10px;
+    height: 144px;
+    padding: 30px 0;
+}
+main .bg2 section .quiz_participation .status .contents em {
+    font-size: 4.375rem;
+    font-weight: 700;
+}
+main .bg2 section .quiz_participation .status .contents span,
+main .bg2 section .quiz_participation .status .contents strong {
+    font-size: 2.125rem;
+    font-weight: 500;
+}
+main .bg2 section .quiz_participation .status .contents strong {
+    color: #050505;
+}
+main .bg2 section .quiz_participation p {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    text-align: right;
+    margin-top: 20px;
+}
