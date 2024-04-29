@@ -1,7 +1,7 @@
 /* HTML 초기화용 */
 * {box-sizing: border-box;}
 body,html,
-h1,h2,h3,h4,h5,h6, fieldset,input,button,select,textarea
+h1,h2,h3,h4,h5,h6, fieldset,input,button,select,textarea,
 p,ul,ol,li,dl,dt,dd,table,tr,td,th,thead,tbody, tfoot,
 div,header,nav,aside,article,section,footer,figure,
 address,blockquote,video,iframe,hr,
@@ -18,3 +18,4 @@ table, tr, td, th {border-collapse:collapse;}
 th {text-align: left;}
 fieldset {border: 0;}
 .skip {display: none;}
+input, button, label {cursor: pointer;}
