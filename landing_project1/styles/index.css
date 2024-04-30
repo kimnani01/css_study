@@ -1,23 +1,42 @@
 main {
     color: #050505;
 }
-/* 배경 공통&개별값 */
+/* 배경 공통&개별값 + 공통제목 */
 main .bg {
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    /* bg cover란? 배경이미지가 적용된 요소의 크기에 자동으로 가로세로 크기를 맞춰 채운다는 뜻 */
 }
 main .bg > section {
     width: 1250px; margin: 0 auto;
     background-color: purple;
 }
-main .bg1 {
-    background-image: url(../images/bg.jpg);
-    height: 1000px;
+main .bg section .sub_title {
+    font-size: 3.438rem;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+    color: #fff;
+    line-height: 1.2;
 }
-main .bg2 {
-    background-image: url(../images/bg_2.jpg);
+main .bg section .support_link {
+    /* 0% #fe9300, 100% #ff7300 */
+    /* CSS 회전각도단위 deg */
+    background: linear-gradient(90deg,#fe9300, #ff7300);
+    /* gradient적용을 위해 background통합속성을 사용했을 때 해당 요소 추가 배경이미지 꾸미기를 원한다면 가상선택자(before, after)를 활용하는 것을 권장한다. */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 100px;
+    width: 409px; height: 71px;
+    /* text-align: center; line-height: 71px; */
+    border-radius: 50px;
+    font-size: 2.125rem;
+    font-weight: 700;
 }
 /* ---------------------------------1. 표지 */
+main .bg1 {background-image: url(../images/bg.jpg);}
 main .bg1 section {
     overflow: hidden;
 }
@@ -42,22 +61,6 @@ main .bg1 section .support_link::after {
     width: 32px; height: 32px;
     display: inline-block;
     margin-left: 10px;
-}
-main .bg1 section .support_link {
-    /* 0% #fe9300, 100% #ff7300 */
-    /* CSS 회전각도단위 deg */
-    background: linear-gradient(90deg,#fe9300, #ff7300);
-    /* gradient적용을 위해 background통합속성을 사용했을 때 해당 요소 추가 배경이미지 꾸미기를 원한다면 가상선택자(before, after)를 활용하는 것을 권장한다. */
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 100px;
-    width: 409px; height: 71px;
-    /* text-align: center; line-height: 71px; */
-    border-radius: 50px;
-    font-size: 2.125rem;
-    font-weight: 700;
 }
 main .bg1 section .support_question {
     background-color: #050505;
@@ -89,6 +92,7 @@ main .bg1 section .support_question::after {
     margin-left: 10px;
 }
 /* ---------------------------------2. 퀴즈 */
+main .bg2 {background-image: url(../images/bg_2.jpg);}
 main .bg2 section {
     display: flex;/* flex의 item 기본 메인 축 정렬은 수평 */
 }
@@ -100,18 +104,16 @@ main .bg2 section #quiz_frm {
     padding: 80px 0 80px;
 }
 main .bg2 section #quiz_frm .quiz_contents {
-    color: #fff;
+    
 }
 main .bg2 section #quiz_frm .quiz_contents h2 {
-    font-size: 3.438rem;
-    font-weight: 500;
-    letter-spacing: -0.1px;
     width: 450px;
     text-align: center;
     margin: 0 0 40px;
 }
 main .bg2 section #quiz_frm .quiz_contents h2 + p,
 main .bg2 section #quiz_frm .quiz_contents .quiz_list li{
+    color: #fff;
     font-size: 1.25rem;
     font-weight: 500;
     margin:0 0 30px;
@@ -206,4 +208,115 @@ main .bg2 section .quiz_participation p {
     text-align: right;
     margin-top: 20px;
 }
-/* ---------------------------------3. 북극곰 이야기 */
+/* ---------------------------------3. 새끼 북극곰 이야기 */
+main .bg3 {
+    background-image: url(../images/bg_3.jpg);
+}
+main .bg3 section {
+    padding: 100px 0;
+    text-align: center;
+}
+main .bg3 section .sub_title {color: #050505;}
+main .bg3 section #video {
+    width:900px; height: 600px; 
+    margin: 50px 0;
+}
+main .bg3 section .sponsor_link {}
+/* ---------------------------------4. 50% 감소 */
+main .bg4 {background-image: url(../images/bg_4.jpg);}
+main .bg4 section {}
+main .bg4 section .sub_title {}
+main .bg4 section .sub_title em {}
+main .bg4 section .sub_title + p {}
+main .bg4 section p:last-child {}
+main .bg4 section p:last-child img {}
+/* ---------------------------------5. 빙하 */
+main .bg5 {background-image: url(../images/bg_5.jpg);}
+main .bg5 section {
+    padding: 100px 0;
+}
+main .bg5 section .sub_title {
+    color: #050505;
+    text-align: center;
+}
+main .bg5 section .sub_title + p {
+    font-size: 1.625rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 50px 0;
+    text-align: center;
+}
+main .bg5 section .container {
+    display: flex;
+    justify-content: space-between;
+}
+main .bg5 section .container li {
+    text-align: center;
+    width: 387px;
+}
+main .bg5 section .container li .bg {
+    padding-top: 16px;
+    height: 320px;
+}
+main .bg5 section .container li .bg1 {
+    background-image: url(../images/box_img1.jpg);
+}
+main .bg5 section .container li .bg2 {
+    background-image: url(../images/box_img2.jpg);
+}
+main .bg5 section .container li .bg3 {
+    background-image: url(../images/box_img3.jpg);
+}
+main .bg5 section .container li .bg h3 {
+    color: #fff;
+    font-size: 2.688rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+main .bg5 section .container li .bg p {
+    color: #fff;
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+main .bg5 section .container li .contents {
+    background-color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.7;
+    height: 250px;
+    padding-top: 23px;
+}
+/* ---------------------------------6. 위기 */
+main .bg6 {background-image: url(../images/bg_6.jpg);}
+main .bg6 section {}
+main .bg6 section .sub_title {}
+main .bg6 section .sub_title em {}
+main .bg6 section .sub_title + p {}
+main .bg6 section p:last-child {}
+main .bg6 section p:last-child img {}
+/* ---------------------------------4,6. 그룹선택자 */
+main .bg4 section,
+main .bg6 section {padding: 100px 0;}
+main .bg4 section .sub_title,
+main .bg6 section .sub_title {}
+main .bg4 section .sub_title em,
+main .bg6 section .sub_title em {
+    background-color: #fff;
+    color: #2e3148;
+    font-weight: 500;
+    display: inline-block;
+    padding: 10px 0;
+}
+main .bg4 section .sub_title + p,
+main .bg6 section .sub_title + p {
+    font-size: 2.125rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color: #fff;
+    margin: 50px 0;
+}
+main .bg4 section p:last-child,
+main .bg6 section p:last-child {}
+main .bg4 section p:last-child img,
+main .bg6 section p:last-child img {}
+/* ---------------------------------6. 위기 */

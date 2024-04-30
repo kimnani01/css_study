@@ -30,25 +30,22 @@ main .bg1 section .left_title h1 {
 }
 main .bg1 section .left_title h1 a {}
 main .bg1 section .left_title h1 a img {}
-main .bg1 section .left_title h2 {
+main .bg1 section .left_title h2:nth-last-of-type(1) {
+    font-size: 2.125rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+main .bg1 section .left_title h2:nth-last-of-type(2) {
     font-size: 4.375rem;
     font-weight: 700;
     letter-spacing: -0.2px;
     line-height: 1.1;
     margin: 0 0 20px;
 }
-main .bg1 section .left_title h2 em {
-    font-size: 2.125rem;
-    font-weight: 500;
-    line-height: 1.2;
-}
-main .bg1 section .left_title .download {
-    display: flex;
-    justify-content: space-between;
-    width: 450px;
-}
+main .bg1 section .left_title .download {}
 main .bg1 section .left_title .download .google_play::before,
 main .bg1 section .left_title .download .app_store::before {
+    background-repeat: no-repeat;
     content: ''; 
     display: inline-block;
     width: 48px; height: 48px;
@@ -68,9 +65,7 @@ main .bg1 section .left_title .download .app_store {
     font-size: 1.25rem;
     font-weight: 500;
     letter-spacing: -0.2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
 }
 /* 오른쪽 */
 main .bg1 section .right_img {text-align: right;}
