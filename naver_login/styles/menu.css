@@ -1,0 +1,128 @@
+#app {
+    width: 375px; height: 812px;
+    margin: 30px auto 0;
+    padding-top: 42px;
+    border: 1px solid black;
+}
+/* ---------------------------- header */
+#app header {
+    height: 56px;
+    padding: 0 16px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#app header h1 {
+    font-size: 1.25rem; /* 20px */
+    font-weight: 600;
+}
+#app header .right {}
+#app header .right a {
+    background-color: gray;
+    width: 24px; height: 24px;
+    display: inline-block;
+    margin-left: 16px;
+}
+#app header .right a:first-child {margin: 0;} 
+/* ---------------------------- main */
+#app main {}
+#app main .adver {background-color: gray;}
+#app main .adver1 {
+    height: 70px;
+    margin-bottom: 24px;
+}
+#app main > h2 {margin: 0 16px 16px;}
+#app main > h2 a {}
+#app main > h2 a em {font-weight: 600;}
+#app main > .category {
+    border: 1px solid black;
+    margin: 0 16px 24px;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 10px 0;
+}
+#app main > .category a {
+    border: 1px solid black;
+    width: calc(100% / 4);
+    padding: 0 12px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0 0 24px;
+}
+#app main > .category a:nth-child(5),
+#app main > .category a:nth-child(6),
+#app main > .category a:nth-child(7),
+#app main > .category a:nth-child(8) {margin: 0;}
+#app main > .category a img {
+    border: 1px solid gray;
+    width: 42px; height: 42px;
+    margin: 0 0 5px;
+}
+#app main > .category a span {
+    font-size: 0.75rem;
+}
+#app main .notice {
+    padding: 16px; border:1px solid black;
+    display: flex;
+    align-items: center;
+    margin: 0 0 16px;
+}
+#app main .notice img {
+    margin-right: 16px;
+    width: 24px; height: 24px;
+    border: 1px solid gray;}
+
+#app main .notice span {font-size: 0.75rem;}
+#app main .adver2 {
+    height: 120px;
+    margin: 0 0 24px;
+}
+/* ---------------------------- 전체서비스 */
+#app main .service_warp {}
+#app main .service_warp .top {
+    padding: 10px 16px; margin: 0 0 16px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+}
+#app main .service_warp .top h2 {font-weight: 600;}
+#app main .service_warp .top a {
+    display: flex;
+    align-items: center;
+}
+#app main .service_warp .top a img {
+    width: 16px; height: 16px;
+    border: 1px solid gray;
+    margin-right: 10px;
+}
+#app main .service_warp .top a span {font-size: 0.75rem;}
+#app main .service_warp h3 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 10px 16px;
+    margin: 0 0 16px;
+    border: 1px solid black;
+}
+#app main .service_warp .news_category {
+    border: 1px solid black;
+    margin: 0 16px;
+    display: flex;
+    flex-flow: row wrap;
+}
+#app main .service_warp .news_category a {
+    border: 1px solid gray;
+    width: calc(100% / 2);
+    display: flex;
+    align-items: center;
+    margin: 0 0 16px;
+}
+#app main .service_warp .news_category a img {
+    width: 24px; height: 24px;
+    border: 1px solid gray;
+    margin-right: 16px;
+}
+#app main .service_warp .news_category a span {
+    font-size: 0.875rem;
+}
