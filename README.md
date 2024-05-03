@@ -144,3 +144,25 @@
 * align-self : container(부모)에 적용하는 align-items보다 우선순위가 높다
 * order : 아이템의 정렬 순서 설정. 태그순서와 상관없이 order로 정렬순서를 변경가능
 * flex : 증가/감소/기본의 묶음속성
+## position
+### position의 필수 속성1 : relative
+* -본인위주-
+* relative 선택 속성 :top / bottom / left / right
+### position의 필수 속성2 : absolute
+* -자유로운 영혼-(잡기가능)
+* absolute 선택 속성 : top / bottom / left / right
+* 부모 중에 기준이 되는 것에 포지션을 줘야 한다.
+* absolute 설정 시 absolute 적용 요소의 부모에 position 추가 설정을 안하면 absolute 적용 요소는 body를 기준으로 위치가 설정된다.
+* 태그 작성위치와 관계없이 디자인적으로 자유로운 위치 설정 시 absolute 사용
+### position의 필수 속성3 : fixed
+* -자유로운 영혼-(잡기불가)
+* fixed 선택 속성 : top / bottom / left / right
+* fixed는 뷰포트영역 기준 스크롤과 관계없이 고정되는 위치로 사용한다.
+## Font-Awesome
+1. font-awesome CDN link태그로 준비한다.
+* font-awesome 링크 연결은 reset보다 먼저 연결해야 한다.
+2. awesome 전용의 font-family와 weight를 설정한다.
+* reset에 붙여넣기
+3. awesome 적용될 태그를 준비한다.
+4. 준비한  3번 태그에 가상 선택자(after or before)를 작성한다.
+5. 가상선택자에 content속성을 입력해서 Unicode를 삽입한다.
