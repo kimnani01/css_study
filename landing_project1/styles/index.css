@@ -248,11 +248,14 @@ main .bg5 section .sub_title + p {
 }
 main .bg5 section .container {
     display: flex;
-    justify-content: space-between;
 }
 main .bg5 section .container li {
+    flex: 1;
     text-align: center;
-    width: 387px;
+    margin-right: 45px;
+}
+main .bg5 section .container li:last-child {
+    margin: 0;
 }
 main .bg5 section .container li .bg {
     padding-top: 16px;
@@ -319,4 +322,82 @@ main .bg4 section p:last-child,
 main .bg6 section p:last-child {}
 main .bg4 section p:last-child img,
 main .bg6 section p:last-child img {}
-/* ---------------------------------6. 위기 */
+/* ---------------------------------7. wwf */
+main .bg7 {
+    background-image: url(../images/bg_7.jpg);
+}
+main .bg7 section {
+    padding: 100px 0;
+}
+main .bg7 section .sub_title {
+    font-size: 4.375rem;
+    font-weight: 700;
+    color:#050505;
+    text-align: center;
+    margin-bottom: 50px;
+}
+main .bg7 section p {
+    font-size: 2.688rem;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 50px;
+}
+main .bg7 section p:last-child {
+    margin: 0;
+}
+/* ---------------------------------8. 다양한 활동 */
+main .bg8 {}
+main .bg8 section {
+    background-image: url(../images/bg_8.jpg);
+    padding: 100px 0;
+}
+main .bg8 section .sub_title {
+    text-align: center;
+    color:#050505;
+    margin: 0 0 50px;
+}
+main .bg8 section .container {
+    display: flex;
+    justify-content: space-between;
+}
+main .bg8 section .container > * {
+    width:calc((100% - 20px) / 2)
+}
+main .bg8 section .container .left {
+    /* flex: 1; */
+}
+main .bg8 section .container .left li {
+    height: 240px;
+}
+main .bg8 section .container .left li:first-child {
+    margin: 0 0 20px;
+    background-image: url(../images/wwf_img1.jpg);
+}
+main .bg8 section .container .left li:last-child {
+    background-image: url(../images/wwf_img2.jpg);
+}
+main .bg8 section .container .right {
+    background-image: url(../images/wwf_img3.jpg);
+    /* flex: 1; */
+}
+/* ---------------------------------bg8 공통 dl, dt, dd */
+main .bg8 section .container .left li,
+main .bg8 section .container .right {
+    position: relative;
+}
+main .bg8 section .container /* 중간부모생략 */ dl {
+    background-color: rgba(5, 5, 5, 0.5) ;
+    position: absolute; left: 0; bottom: 10px;
+    /* absolute 설정 요소는 블록 요소여도 inline-block처럼 내용 크기만큼만 인식한다. */
+    /* absolute 설정 요소의 기본 너비 100%를 유지하고 싶다면 absolute는 inline-block처럼 너비를 내용만큼 인식하니까 반드시 width:100%를 추가로 입력해서 적용해야 한다!! */
+    padding: 15px 20px;
+}
+main .bg8 section .container dl * {color: #fff;}
+main .bg8 section .container dl dt {
+    margin: 0 0 10px;
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+main .bg8 section .container dl dd {
+    line-height: 1.7;
+}
