@@ -1,8 +1,8 @@
 /* HTML 초기화용 */
 * {box-sizing: border-box;}
 body,html,
-h1,h2,h3,h4,h5,h6, fieldset,input,button,select,textarea,
-p,ul,ol,li,dl,dt,dd,table,tr,td,th,thead,tbody, tfoot,
+h1,h2,h3,h4,h5,h6,fieldset,input,button,select,textarea,
+p,ul,ol,li,dl,dt,dd,table,tr,td,th,thead,tbody,tfoot,
 div,header,nav,aside,article,section,footer,figure,
 address,blockquote,video,iframe,hr,
 span,em,strong,q,a,sub,sup,details,figcaption,summary,time,s,del,code,mark,img {
@@ -19,3 +19,11 @@ th {text-align: left;}
 fieldset {border: 0;}
 .skip {display: none;}
 input, button, label {cursor: pointer;}
+/* font-awesome 전용속성값 */
+.fa {
+    font-weight: 600;
+    font-family: 
+        'Font Awesome 5 Free', 
+        'Font Awesome 5 Brands', 
+        'Font Awesome 5 Solid';
+}
