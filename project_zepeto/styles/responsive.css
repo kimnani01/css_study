@@ -5,7 +5,18 @@
     header nav {display:none}
     main .visual video {width: 1300px;}
     main .creater {width: 100%;}
+    main .world section {width: 100%;}
+    main .million {width: 100%;}
+    main .million .img img {width: calc((100% / 4) - 10px);}
+    main .million .img img:last-child {display: none;}
 }/* 761~1300 */
+
+@media screen and (max-width:1000px) {
+    main .million h2 {font-size: 2.188rem;}
+    main .million p {font-size: 1rem;}
+    main .million .img img {width: calc((100% / 3) - 10px);}
+    main .million .img img:nth-last-child(2) {display: none;}
+}
 
 @media screen and (max-width:760px) {
     header h1 {width: 225.75px;}
@@ -13,4 +24,16 @@
     main .creater .studio {flex-flow: row wrap;}
     main .creater .studio dl {width: calc(100% / 2);}
     main .creater .studio dl:last-child {width: 100%;}
+    main .world section .contents {
+        flex-flow: column nowrap;
+        align-items: center;
+    }
+    main .world section .contents li {
+        width: calc(100%); height: 150px;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+    main .world section .contents li:nth-child(2) {margin: 10px 0;}
+    main .world section .contents li p {margin: 0;}
 }/* ~760 */

@@ -93,7 +93,6 @@ main .creater .img img {
 main .creater .studio {
     display: flex;
     flex-flow: row nowrap;
-    align-content: center;
 }
 main .creater .studio dl {
     width: calc(100% / 3);
@@ -105,3 +104,67 @@ main .creater .studio dl dt {
 main .creater .studio dl dd {
     font-size: 1.25rem;
 }
+/* --------main3. 제페토 세상 */
+main .world {
+    background-color: #f5f5f5;
+    margin: 150px 0 0; padding: 150px 0;
+}
+main .world section {
+    width: 1300px;
+    margin: 0 auto;
+    text-align: center;
+}
+main .world section h2 {
+    font-size: 3rem; font-weight: 700;
+}
+main .world section p {
+    font-size: 1.25rem; line-height: 1.5;
+    margin: 50px 0;
+}
+main .world section .contents {
+    padding: 0 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .world section .contents li {
+    background-color: #fff;
+    border-radius: 15px;
+    width: calc((100% / 3) - 20px);
+    height: 350px; /* 내용 높낮이가 서로 다르므로 높이 고정 */
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+main .world section .contents li h3 {
+    font-size: 1.5rem; font-weight: 700;
+}
+main .world section .contents li p {
+    line-height: 1.7;
+    margin: 40px 0;
+}
+main .world section .contents li .more_link {
+    background-color: #000; color: #fff;
+    border-radius: 20px;
+    line-height: 54px; width: 128px;
+}
+/* --------main3. 3억명 크리에이터 */
+main .million {
+    width: 1300px; margin: 150px auto;
+    text-align: center;
+}
+main .million h2 {
+    font-size: 3rem; font-weight: 700;
+}
+main .million p {
+    font-size: 1.25rem; line-height: 1.5;
+    margin: 50px 0;
+}
+main .million .img {
+    padding: 0 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+main .million .img img {width: 240px;}
