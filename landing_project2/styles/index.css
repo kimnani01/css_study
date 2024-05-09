@@ -2,6 +2,7 @@ main {font-family: "Noto Sans KR", sans-serif;}
 /* 공통 */
 main .bg {
     width: 100%;
+    background-repeat: no-repeat;
 }
 main .bg section {
     width: 1250px;
@@ -48,7 +49,6 @@ main .bg section .sub_title {}
 /* -------------------------------------------1. 표지 */
 main .bg1 {
     background-image: url(../images/bg1.jpg);
-    background-repeat: no-repeat;
 }
 main .bg1 section {
     display: flex;
@@ -81,7 +81,6 @@ main .bg1 section .right img {}
 /* -------------------------------------------2. 퀴즈 */
 main .bg2 {
     background-image: url(../images/bg2.jpg);
-    background-repeat: no-repeat;
 }
 main .bg2 section {
     padding: 30px 0;
@@ -115,8 +114,9 @@ main .bg2 section .quiz .quiz_list {
 }
 main .bg2 section .quiz .quiz_list li {
     margin-bottom: 20px;
+    border: 2px solid red;
 }
-main .bg2 section .quiz .quiz_list li:last-of-type {
+main .bg2 section .quiz .quiz_list li:last-child {
     margin-bottom: 0;
 }
 main .bg2 section .quiz .quiz_list li input[name=app_service] {
@@ -131,7 +131,7 @@ main .bg2 section .quiz .quiz_list li label {
 main .bg2 section .quiz .quiz_list li input[name=app_service]:checked  + label {
     background-image: url(../images/check.svg);
 }
-main .bg2 section .quiz .quiz_list + p {}
+main .bg2 section .quiz .quiz_list + p {margin: 0;}
 main .bg2 section .quiz .quiz_list + p #answer_btn {
     background-color: #82DC28;
     font-size: 1.25rem;
@@ -142,8 +142,9 @@ main .bg2 section .quiz .quiz_list + p #answer_btn {
     width: 580px; line-height: 54px;
 }
 /* -------------------------------------------3. 영상 */
-main .bg3 {background-image: url(../images/bg3.jpg);}
-main .bg3 section {}
+main .bg3 {background-image: url(../images/bg3.jpg);
+border: 2px solid red;}
+main .bg3 section {padding: 100px;}
 main .bg3 section h2 {
     font-size: 3.438rem; font-weight: 700;
     letter-spacing: -0.2px;
