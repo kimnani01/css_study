@@ -26,7 +26,7 @@
 }
 #app header .right a:first-child {margin: 0;} 
 /* ---------------------------- main */
-#app main {}
+#app main {height: 714px; overflow-y: auto;}
 #app main .adver {background-color: gray;}
 #app main .adver1 {
     height: 70px;
@@ -35,7 +35,7 @@
 #app main > h2 {margin: 0 16px 16px;}
 #app main > h2 a {}
 #app main > h2 a em {font-weight: 600;}
-#app main > .category {
+/* #app main > .category {
     border: 1px solid black;
     margin: 0 16px 24px;
     display: flex;
@@ -54,7 +54,22 @@
 #app main > .category a:nth-child(5),
 #app main > .category a:nth-child(6),
 #app main > .category a:nth-child(7),
-#app main > .category a:nth-child(8) {margin: 0;}
+#app main > .category a:nth-child(8) {margin: 0;} */
+/* -------------------grid */
+#app main > .category {
+    border: 1px solid black;
+    padding: 10px 16px; margin: 0 0 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 10px 0; /* grid item사이 여백, container바깥쪽 */
+}
+#app main > .category a {
+    border: 1px solid black;
+    display: grid; /* grid item 기본정렬(수직) */
+    grid-gap: 5px;
+    justify-items: center;
+}
 #app main > .category a img {
     border: 1px solid gray;
     width: 42px; height: 42px;

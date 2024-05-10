@@ -61,7 +61,7 @@
     margin: 26px 16px 143px;
     background-color: gray; height: 16px;
 }
-#app main .adver2 {
+/* #app main .adver2 {
     background-color: gray; height: 120px;
     margin: 0 16px 16px;
 }
@@ -74,7 +74,24 @@
     background-color: gray;
 }
 #app main .weather_g li:first-child {margin-right: 9.5px;}
-#app main .blog_g {margin: 0 16px; height: 120px; background-color: gray;}
+#app main .blog_g {margin: 0 16px; height: 120px; background-color: gray;} */
+/* --------------adver2 ~ blog_g (grid 버전 수정 20240510 */
+#app main .grid_container {
+    padding: 0 16px;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: 120px 66px 120px;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-areas: 
+        'adver2 adver2'
+        'weather1 weather2'
+        'blog blog';
+}
+#app main .grid_container > * {background-color: gray;}
+#app main .grid_container .adver2 {grid-area: adver2;}
+#app main .grid_container .weather1 {grid-area: weather1;}
+#app main .grid_container .weather2 {grid-area: weather2;}
+#app main .grid_container .blog_g {grid-area: blog;}
 /* ---------------Nav */
 #app nav a {
     border: 1px solid black; /* 경계 구분용 */
