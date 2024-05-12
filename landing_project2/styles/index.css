@@ -1,15 +1,18 @@
-main {font-family: "Noto Sans KR", sans-serif;}
+main, footer {font-family: "Noto Sans KR", sans-serif;}
 /* 공통 */
-main .bg {
+main .bg{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     /* bg cover란? 배경이미지가 적용된 요소의 크기에 자동으로 가로세로 크기를 맞춰 채운다는 뜻 */
 }
-main .bg > section {
+main .bg > section,
+footer .bg > section  {
     width: 1250px;
     margin: 0 auto;
 }
+main .bg > section *,
+footer .bg > section * {letter-spacing: -0.2px;}
 /* 다운로드 버튼 공통 */
 main .bg section .download {
     display: flex;
@@ -35,7 +38,6 @@ main .bg section .download .app_store {
     width: 220px; line-height: 68px;
     font-size: 1.25rem;
     font-weight: 500;
-    letter-spacing: -0.2px;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -49,7 +51,6 @@ main .bg section .download:last-child {
 /* .sub_title 공통 */
 main .bg section .sub_title {
     font-size: 3.438rem; font-weight: 700;
-    letter-spacing: -0.2px; line-height: 1.3;
     text-align: center;
 }
 /* -------------------------------------------1. 표지 */
@@ -70,13 +71,11 @@ main .bg1 section .left h1 a img {}
 main .bg1 section .left h2:nth-of-type(1) {
     font-size: 2.125rem;
     font-weight: 500;
-    letter-spacing: -0.2px;
     margin-bottom: 13px;
 }
 main .bg1 section .left h2:nth-of-type(2) {
     font-size: 4.375rem;
     font-weight: 700;
-    letter-spacing: -0.2px;
     line-height: 1.3;
     margin: 0 0 100px;
 }
@@ -100,7 +99,6 @@ main .bg2 section .quiz {
 main .bg2 section .quiz h2 {
     font-size: 3.438rem;
     font-weight: 700;
-    letter-spacing: -0.2px;
     line-height: 80px;
     text-align: center;
 }
@@ -108,7 +106,6 @@ main .bg2 section .quiz h2 + p,
 main .bg2 section .quiz .quiz_list li label {
     font-size: 1.25rem;
     font-weight: 500;
-    letter-spacing: -0.2px;
 }
 main .bg2 section .quiz h2 + p {
     text-align: center;
@@ -140,15 +137,13 @@ main .bg2 section .quiz .quiz_list + p #answer_btn {
     background-color: #82DC28;
     font-size: 1.25rem; 
     font-weight: 500;
-    letter-spacing: -0.2px;
     border: 0;
     border-radius: 30px;
     width: 580px; line-height: 54px;
 }
 /* -------------------------------------------3. 영상 */
 main .bg3 {background-image: url(../images/bg3.jpg);}
-main .bg3 section {
-    padding: 100px 0;}
+main .bg3 section {padding: 100px 0;}
 main .bg3 section .sub_title {}
 main .bg3 section #video {
     margin: 80px auto;
@@ -157,3 +152,151 @@ main .bg3 section #video {
 main .bg3 section .download {
     display: flex; justify-content: center;
 }
+/* -------------------------------------------4. 다양한 서비스 */
+main .bg4 {background-image: url(../images/bg4.jpg);}
+main .bg4 section {padding: 100px 0;}
+main .bg4 section .sub_title {
+    color: #fff;
+    margin-bottom: 80px;
+}
+main .bg4 section .contents {
+    display: flex;
+    justify-content: space-between;
+}
+main .bg4 section .contents dl {
+    background-color: #f0f0f0;
+    border-radius: 50px;
+    text-align: center;
+    padding: 50px 0;
+}
+main .bg4 section .contents dl dt {
+    font-size: 2.125rem; font-weight: 700;
+    line-height: 41px;
+}
+main .bg4 section .contents dl dd:nth-of-type(1) {
+    font-size: 1.25rem; line-height: 34px; 
+    margin-bottom: 10px;
+}
+main .bg4 section .contents dl dd img {}
+/* -------------------------------------------4. 다양한 서비스 */
+main .bg5 {background-image: url(../images/bg5.jpg);}
+main .bg5 section {
+    padding: 100px 0;
+    text-align: center;
+}
+main .bg5 section .sub_title {
+    line-height: 1.3;
+}
+main .bg5 section h3 {
+    font-size: 2.688rem; font-weight: 600; 
+    line-height: 52px;
+    margin: 80px 0;
+}
+main .bg5 section h3 span {
+    color: #ff7878; font-weight: 600;
+}
+main .bg5 section .delivery {
+    display: flex;
+    justify-content: space-between;
+}
+main .bg5 section .delivery dl {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 402px;
+    padding: 30px 0;
+}
+main .bg5 section .delivery dl dt {
+    font-size: 2.125rem; font-weight: 700;
+}
+main .bg5 section .delivery dl:nth-child(1) dt em {
+    color: #82DC28; font-weight: 700;
+}
+main .bg5 section .delivery dl:nth-child(2) dt em {
+    color: #ff7878; font-weight: 700;
+}
+main .bg5 section .delivery dl:nth-child(3) dt em {
+    color: #46227c; font-weight: 700;
+}
+main .bg5 section .delivery dl dd:first-of-type {
+    font-size: 1.25rem; font-weight: 500;
+    line-height: 1.7; margin: 20px 0;
+}
+main .bg5 section .delivery dl dd:last-child {
+    line-height: 1.7;
+}
+
+/* -------------------------------------------12. footer */
+footer {} 
+footer .bg12 {background-color: #eee;} 
+footer .bg12 section {
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+footer .bg12 section > a {} 
+footer .bg12 section .info {
+    width: 937px;
+    display: grid;
+    grid-template-areas: 
+    'cont law hana'
+    'info info info';
+    grid-gap: 20px 67px;
+    grid-template-columns: 355px 220px 250px;
+    
+} 
+footer .bg12 section .info * {
+    line-height: 1.7;
+} 
+footer .bg12 section .info .contents {grid-area: cont;} 
+footer .bg12 section .info .contents p {
+    font-weight: 700;
+    margin-bottom: 10px;
+} 
+footer .bg12 section .info .contents address {} 
+footer .bg12 section .info .contents .mail {
+    display: block;
+}
+footer .bg12 section .info .contents a:last-child,
+footer .bg12 section .info .hana_service a {
+    border-bottom: 1px solid#000;
+} 
+footer .bg12 section .info .contents a:last-child::after,
+footer .bg12 section .info .hana_service a::after {
+    background-image: url(../images/arrow_footer.svg);
+    background-repeat: no-repeat;
+    background-position-y: 1px;
+    content: ''; display: inline-block;
+    width: 16px; height: 16px;
+} 
+footer .bg12 section .info .contents address a:last-child::after {} 
+footer .bg12 section .info .law {grid-area: law;} 
+footer .bg12 section .info .law li {} 
+footer .bg12 section .info .law li a {} 
+footer .bg12 section .info .law li a:nth-child(2)::before {} 
+footer .bg12 section .info .law li:nth-child(2) a {
+    font-weight: 700;
+} 
+footer .bg12 section .info .hana_service {grid-area: hana;} 
+footer .bg12 section .info .hana_service p:first-child {
+    font-weight: 700; margin-bottom: 10px;
+} 
+footer .bg12 section .info .hana_service p:last-child {margin: 10px 0;} 
+footer .bg12 section .info > p {grid-area: info;} 
+/* footer 아래 */
+footer .bg13 {background-color: #cdcdcd;} 
+footer .bg13 section {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+footer .bg13 section .left {font-weight: 700;} 
+footer .bg13 section .right {
+    display: flex;
+    align-items: center;
+} 
+footer .bg13 section .right p {font-weight: 700;} 
+footer .bg13 section .right .sns {} 
+footer .bg13 section .right .sns a {margin-left: 20px;} 
+footer .bg13 section .right .sns a img {} 
