@@ -10,7 +10,6 @@ main .bg {
 }
 main .bg > section {
     width: 1250px; margin: 0 auto;
-    background-color: purple;
 }
 main .bg section .sub_title {
     font-size: 3.438rem;
@@ -74,6 +73,7 @@ main .bg1 section .support_question {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 312px;
 }
 main .bg1 section .support_question::before,
 main .bg1 section .support_question::after {
@@ -346,9 +346,8 @@ main .bg7 section p:last-child {
     margin: 0;
 }
 /* ---------------------------------8. 다양한 활동 */
-main .bg8 {}
+main .bg8 {background-image: url(../images/bg_8.jpg);}
 main .bg8 section {
-    background-image: url(../images/bg_8.jpg);
     padding: 100px 0;
 }
 main .bg8 section .sub_title {
