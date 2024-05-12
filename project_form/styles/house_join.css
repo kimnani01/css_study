@@ -60,6 +60,11 @@ main #join_frm .user_info dl dd select[name=web] {
     padding: 10px 0 10px 10px;
     font-size: 0.875rem;
 }
+main #join_frm .user_info dl dd input[name^=user]:focus, 
+main #join_frm .user_info dl dd select[name=web]:focus {
+    outline: 2px solid #35c5f0;
+    border: 0;
+}
 main #join_frm .user_info dl dd input[name^=user]::placeholder {
     color: #d0d0d0;
 }
