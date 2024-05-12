@@ -41,7 +41,10 @@ header .snb a:last-child {
 }
 header .snb a img {width: 100%; filter:invert(1);}
 /* .snb a 상태선택자 */
-header .snb a:first-child:hover {border-color: #ff0;}
+header .snb a:first-child:hover {
+    background-color: #fff;
+    color: #000; 
+}
 header .snb a:last-child:hover img {filter: invert(1) opacity(50%);}
 /* --------main1. 동영상, 시작하기 버튼 위치 */
 main {}
@@ -68,7 +71,7 @@ main .visual .visual_title .start_link {
     display: inline-block; margin-top: 30px;
 }
 main .visual .visual_title .start_link:hover {
-    border-radius: 20px;
+    background-color: #fff; color: #000;
 }
 /* --------main2. 크리에이터 */
 main .creater {
