@@ -144,7 +144,7 @@ main .bg2 section .quiz .quiz_list + p #answer_btn {
 /* -------------------------------------------3. 영상 */
 main .bg3 {background-image: url(../images/bg3.jpg);}
 main .bg3 section {padding: 100px 0;}
-main .bg3 section .sub_title {}
+main .bg3 section .sub_title {line-height: 1.3;}
 main .bg3 section #video {
     margin: 80px auto;
     width: 100%;
@@ -178,7 +178,7 @@ main .bg4 section .contents dl dd:nth-of-type(1) {
     margin-bottom: 10px;
 }
 main .bg4 section .contents dl dd img {}
-/* -------------------------------------------4. 다양한 서비스 */
+/* -------------------------------------------5. 오늘드림 */
 main .bg5 {background-image: url(../images/bg5.jpg);}
 main .bg5 section {
     padding: 100px 0;
