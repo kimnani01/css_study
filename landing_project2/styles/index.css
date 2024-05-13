@@ -273,7 +273,9 @@ footer .bg12 section .info .contents address a:last-child::after {}
 footer .bg12 section .info .law {grid-area: law;} 
 footer .bg12 section .info .law li {} 
 footer .bg12 section .info .law li a {} 
-footer .bg12 section .info .law li a:nth-child(2)::before {} 
+footer .bg12 section .info .law li a:nth-child(2)::before {
+    content: '・'; margin-right: 4px;
+} 
 footer .bg12 section .info .law li:nth-child(2) a {
     font-weight: 700;
 } 
